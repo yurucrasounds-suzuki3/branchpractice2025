@@ -3,41 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Branch Practice — Simple Site</title>
+  <title>Branch Practice — For Campus Life</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="女子大生に好まれる可愛いデザインでブランチ練習をしよう！">
 </head>
 <body>
   <header class="site-header">
-    <h1>Branch Practice</h1>
-    <p class="tagline">このリポジトリでブランチ運用を練習しましょう。</p>
+    <div class="header-inner">
+      <div class="logo">🌸<span class="logo-text">Campus Branch</span></div>
+      <nav class="nav">
+        <a href="#intro">使い方</a>
+        <a href="#demo">デモ</a>
+        <a href="#commands">コマンド</a>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>かわいいデザインで<br>ブランチを練習しよう</h1>
+      <p class="hero-sub">サークルや友達とのコラボにも使える、シンプルで可愛いテンプレート。</p>
+      <div class="hero-cta">
+        <button id="showMessage" class="btn btn-primary">はじめてみる</button>
+        <button id="likeButton" class="btn btn-ghost">お気に入り</button>
+      </div>
+    </div>
   </header>
 
   <main class="content">
-    <section class="intro">
-      <h2>使い方</h2>
-      <ol>
-        <li>ローカルでサーバーを起動してページを表示します。</li>
-        <li>新しいブランチを作ってファイルを編集し、プルリクを作成します。</li>
-      </ol>
+    <section id="intro" class="intro cards">
+      <article class="card">
+        <h3>ステップ1</h3>
+        <p>新しいブランチを作成して、好きな変更をしてみましょう。</p>
+      </article>
+      <article class="card">
+        <h3>ステップ2</h3>
+        <p>プルリクを作成して、レビューをもらおう。</p>
+      </article>
+      <article class="card">
+        <h3>ステップ3</h3>
+        <p>マージしてシェア！みんなで協力して楽しく練習。</p>
+      </article>
     </section>
 
-    <section class="demo">
+    <section id="demo" class="demo">
       <h2>デモ</h2>
-      <p>以下のボタンを押すと、ブランチ練習用のメッセージが表示されます。</p>
-      <button id="showMessage">メッセージを表示</button>
-      <div id="message" class="message" aria-live="polite"></div>
+      <p>ボタンを押すと、メッセージとアニメーションが表示されます。</p>
+      <div class="demo-area">
+        <div id="message" class="message" aria-live="polite"></div>
+      </div>
     </section>
 
-    <section class="resources">
+    <section id="commands" class="resources">
       <h2>推奨コマンド</h2>
       <pre><code>git checkout -b feature/my-change
-# 編集 -> git add . -> git commit -m "Add demo"
+# 編集 -> git add . -> git commit -m "Add cute UI"
 git push -u origin feature/my-change</code></pre>
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>branchpractice2025 — practice safe branching</small>
+    <div class="footer-inner">
+      <small>© Campus Branch — かわいくブランチ練習</small>
+      <div class="social">💌 Share with friends</div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
