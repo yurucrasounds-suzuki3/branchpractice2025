@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Branch Practice — Simple Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Branch Practice</h1>
+    <p class="tagline">このリポジトリでブランチ運用を練習しましょう。</p>
+  </header>
+
+  <main class="content">
+    <section class="intro">
+      <h2>使い方</h2>
+      <ol>
+        <li>ローカルでサーバーを起動してページを表示します。</li>
+        <li>新しいブランチを作ってファイルを編集し、プルリクを作成します。</li>
+      </ol>
+    </section>
+
+    <section class="demo">
+      <h2>デモ</h2>
+      <p>以下のボタンを押すと、ブランチ練習用のメッセージが表示されます。</p>
+      <button id="showMessage">メッセージを表示</button>
+      <div id="message" class="message" aria-live="polite"></div>
+    </section>
+
+    <section class="resources">
+      <h2>推奨コマンド</h2>
+      <pre><code>git checkout -b feature/my-change
+# 編集 -> git add . -> git commit -m "Add demo"
+git push -u origin feature/my-change</code></pre>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>branchpractice2025 — practice safe branching</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
